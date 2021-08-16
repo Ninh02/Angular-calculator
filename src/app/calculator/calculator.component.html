@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <th colspan="5"><input type="text" value="{{inputNumber}}" id="display"> </th>
+  </tr>
+  <tr>
+    <td><button type="button" value="7" (click)="show($event)">7</button></td>
+    <td><button type="button" value="8" (click)="show($event)">8</button></td>
+    <td><button type="button" value="9" (click)="show($event)">9</button></td>
+    <td><button type="button" value="/" (click)="show($event)">/</button></td>
+    <td><button type="button" value="CE" (click)="delete()">CE</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" value="4" (click)="show($event)">4</button></td>
+    <td><button type="button" value="5" (click)="show($event)">5</button></td>
+    <td><button type="button" value="6" (click)="show($event)">6</button></td>
+    <td><button type="button" value="*" (click)="show($event)">*</button></td>
+    <td><button type="button" value="C" (click)="return()">C</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" value="1" (click)="show($event)">1</button></td>
+    <td><button type="button" value="2" (click)="show($event)">2</button></td>
+    <td><button type="button" value="3" (click)="show($event)">3</button></td>
+    <td><button type="button" value="-" (click)="show($event)">-</button></td>
+    <td rowspan="2" ><button type="button" style="padding: 16px" value="=" (click)="calculator()">=</button></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button type="button" value="0" (click)="show($event)">0</button></td>
+    <td><button type="button" value="." (click)="show($event)">.</button></td>
+    <td><button type="button" value="+" (click)="show($event)">+</button></td>
+  </tr>
+</table>
